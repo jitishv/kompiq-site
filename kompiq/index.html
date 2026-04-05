@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <title>Kompiq Assessment - Precision Career Intelligence | 10-Domain Professional DNA</title>
+  <meta name="description" content="The Kompiq Assessment maps your professional DNA across 10 dimensions. 120 scenario-based questions. 40-page personalized report. Discover the work that fits how you're wired.">
+  <link rel="canonical" href="https://kompiq.com/">
+  <meta name="keywords" content="Kompiq, Kompiq Assessment, career assessment, professional DNA, career intelligence, work style assessment, career test, professional assessment">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kompiq",
+    "url": "https://kompiq.com",
+    "description": "Kompiq offers precision career intelligence through research-backed professional assessments that map your unique work DNA across 10 dimensions."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Kompiq",
+    "url": "https://kompiq.com",
+    "description": "Precision career intelligence. Map your professional DNA across 10 dimensions with a research-backed assessment."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kompiq Professional DNA Assessment",
+    "description": "A 120-question research-backed career assessment that maps your professional DNA across 10 dimensions, delivering a 40-page personalized report with role recommendations, growth strategies, and team guides.",
+    "image": "https://kompiq.com/img/kompiq_logo.png",
+    "brand": { "@type": "Brand", "name": "Kompiq" },
+    "offers": {
+      "@type": "Offer",
+      "price": "99.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the Kompiq Assessment measure?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Kompiq Assessment maps your professional DNA across 10 dimensions: Cognitive Style, Energy Patterns, Communication Mode, Decision Architecture, Team Dynamics, Motivation Drivers, Learning Orientation, Time Relationship, Stress Response, and Value Alignment. Together, these reveal the work environments, roles, and teams where you naturally perform at your best." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the Kompiq Assessment take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The assessment takes 18-22 minutes. It consists of 120 forced-choice questions where you choose between two equally valid statements. There are no right or wrong answers." }
+      },
+      {
+        "@type": "Question",
+        "name": "What do I get in the report?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You receive a 40-page personalized report including: domain-by-domain analysis with visualizations, your top 15 ranked strengths, blind spots with mitigation strategies, roles that fit your profile, stress response profile, culture fit map, 90-day growth plan, and a shareable team guide." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a clinical or diagnostic assessment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Kompiq is a professional self-insight tool grounded in organizational psychology and career development research. It is not a clinical assessment, not a personality test, and does not diagnose any condition." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #17142C;
+      --bronze: #A67C45;
+      --bg: #FAF8F3;
+      --card: #FFFFFF;
+      --text: #17142C;
+      --text-secondary: #5B5663;
+      --border: #E7E0D6;
+      --bronze-light: rgba(166, 124, 69, 0.08);
+      --bronze-glow: rgba(166, 124, 69, 0.15);
+      --teal: #5B8A9A;
+      --slate: #7C8DB0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* Nav */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250, 248, 243, 0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 68px; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-img { height: 44px; width: auto; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.15s; letter-spacing: 0.2px; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-links a.active { color: var(--primary); font-weight: 700; }
+    .nav-cta { background: var(--bronze); color: #fff !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; transition: transform 0.15s, box-shadow 0.15s; letter-spacing: 0.3px; }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(166, 124, 69, 0.3); }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--primary); margin: 5px 0; }
+
+    /* Hero */
+    .hero { padding: 160px 2rem 100px; text-align: center; max-width: 800px; margin: 0 auto; }
+    .hero-label { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--bronze); margin-bottom: 1.5rem; display: inline-block; background: var(--bronze-light); padding: 6px 16px; border-radius: 100px; border: 1px solid rgba(166, 124, 69, 0.15); }
+    .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.5rem, 5.5vw, 3.8rem); color: var(--primary); line-height: 1.1; letter-spacing: -1px; margin-bottom: 1.5rem; }
+    .hero h1 em { font-style: normal; color: var(--bronze); }
+    .hero p { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; max-width: 600px; margin: 0 auto 2.5rem; }
+    .hero-cta { display: inline-block; background: var(--bronze); color: #fff; padding: 16px 40px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: transform 0.15s, box-shadow 0.15s; letter-spacing: 0.3px; }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(166, 124, 69, 0.3); }
+    .hero-sub { font-size: 0.82rem; color: #A8A29E; margin-top: 1rem; }
+
+    /* Sections */
+    section { padding: 80px 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--bronze); margin-bottom: 0.75rem; }
+    .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--primary); line-height: 1.15; margin-bottom: 1rem; }
+    .section-subtitle { font-size: 1rem; color: var(--text-secondary); max-width: 600px; line-height: 1.8; margin-bottom: 3rem; }
+
+    /* Domains Grid */
+    .domains-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .domain-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; transition: transform 0.2s, box-shadow 0.2s; }
+    .domain-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.05); }
+    .domain-num { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; font-weight: 500; letter-spacing: 2px; color: var(--bronze); text-transform: uppercase; margin-bottom: 0.5rem; }
+    .domain-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .domain-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* Report Preview */
+    .report-preview { background: var(--primary); border-radius: 20px; padding: 3.5rem; color: #fff; }
+    .report-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .report-item { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.5rem; }
+    .report-item h4 { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--bronze); margin-bottom: 0.5rem; }
+    .report-item p { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
+
+    /* How It Works */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .step { text-align: center; }
+    .step-num { font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 700; color: var(--bronze); margin-bottom: 0.75rem; }
+    .step h3 { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .step p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* Differentiators */
+    .diff-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .diff-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; display: flex; gap: 1rem; align-items: flex-start; }
+    .diff-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--bronze-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--bronze); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; }
+    .diff-card h4 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 0.35rem; }
+    .diff-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* Reviews */
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .review-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; }
+    .review-stars { color: var(--bronze); font-size: 0.9rem; margin-bottom: 0.75rem; letter-spacing: 2px; }
+    .review-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.75; font-style: italic; margin-bottom: 1rem; }
+    .review-name { font-size: 0.82rem; font-weight: 600; color: var(--primary); }
+    .review-role { font-size: 0.75rem; color: #A8A29E; }
+
+    /* FAQ */
+    .faq-list { max-width: 700px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q { padding: 1.25rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+    .faq-q::after { content: '+'; font-size: 1.2rem; color: var(--bronze); transition: transform 0.2s; }
+    .faq-q.open::after { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-a-inner { padding: 0 0 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; }
+
+    /* Final CTA */
+    .final-cta { text-align: center; padding: 100px 2rem; }
+    .final-cta h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--primary); margin-bottom: 1rem; }
+    .final-cta p { font-size: 1rem; color: var(--text-secondary); max-width: 500px; margin: 0 auto 2rem; line-height: 1.8; }
+
+    /* Footer */
+    footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.82rem; }
+    .footer-links a:hover { color: var(--primary); }
+    .footer-disclaimer { font-size: 0.72rem; color: #A8A29E; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .footer-copy { margin-top: 1rem; font-size: 0.75rem; color: #C8C3BB; }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links .nav-link-item { display: none; }
+      .nav-links .nav-cta-item { display: none; }
+      .nav-toggle { display: block; }
+      .nav-links.open { position: absolute; top: 68px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); flex-direction: column; padding: 1rem 1.5rem 1.5rem; gap: 0; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+      .nav-links.open .nav-link-item { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+      .nav-links.open .nav-link-item:last-of-type { border-bottom: none; }
+      .nav-links.open .nav-cta-item { display: block; margin-top: 0.75rem; }
+      .domains-grid, .diff-grid { grid-template-columns: 1fr; }
+      .report-grid, .reviews-grid, .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><img src="img/kompiq_logo.png" alt="Kompiq" class="logo-img"></a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="how-it-works.html">How It Works</a></li>
+        <li class="nav-link-item"><a href="what-you-get.html">What You Get</a></li>
+        <li class="nav-link-item"><a href="methodology.html">Methodology</a></li>
+        <li class="nav-link-item"><a href="reviews.html">Reviews</a></li>
+        <li class="nav-link-item"><a href="faq.html">FAQ</a></li>
+        <li class="nav-link-item"><a href="blog.html">Blog</a></li>
+        <li class="nav-cta-item"><a href="WHOP_CHECKOUT_PLACEHOLDER" class="nav-cta">Take the Assessment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-label">Precision Career Intelligence</div>
+    <h1>Stop guessing what work <em>fits you</em>. Start knowing.</h1>
+    <p>The Kompiq Assessment maps your professional DNA across 10 dimensions. 120 research-backed questions reveal the environments, roles, and teams where you naturally perform at your best.</p>
+    <a href="WHOP_CHECKOUT_PLACEHOLDER" class="hero-cta">Take the Kompiq Assessment - $99</a>
+    <p class="hero-sub">120 questions. 18-22 minutes. 40-page personalized report.</p>
+  </div>
+
+  <!-- 10 Domains -->
+  <section style="background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-label">10 Dimensions</div>
+      <h2 class="section-title">Your career runs on patterns you've never measured</h2>
+      <p class="section-subtitle">Most assessments measure personality. Kompiq measures how you actually work -- the invisible patterns that determine where you thrive and where you struggle.</p>
+      <div class="domains-grid">
+        <div class="domain-card">
+          <div class="domain-num">Domain 01</div>
+          <h3>Cognitive Style</h3>
+          <p>How you process information, solve problems, and structure your thinking. Are you analytical or intuitive? Detail-focused or big-picture?</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 02</div>
+          <h3>Energy Patterns</h3>
+          <p>What sustains your energy over time versus what depletes you -- even when you're good at it. Capability is not sustainability.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 03</div>
+          <h3>Communication Mode</h3>
+          <p>How you share ideas, listen, and persuade. Think-then-speak or think-by-speaking? Direct or diplomatic? Written or verbal?</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 04</div>
+          <h3>Decision Architecture</h3>
+          <p>How you make choices under uncertainty. Fast and reversible, or slow and thorough? Data-driven or gut-driven?</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 05</div>
+          <h3>Team Dynamics</h3>
+          <p>Your natural role in groups. Driver, facilitator, challenger, supporter, or specialist? Your team role is not your job title.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 06</div>
+          <h3>Motivation Drivers</h3>
+          <p>What makes you start and sustain effort. Not what you say motivates you, but what your patterns reveal about your actual drivers.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 07</div>
+          <h3>Learning Orientation</h3>
+          <p>How you acquire knowledge and adapt to change. By reading, doing, watching, teaching, or discussing? Generalist or specialist?</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 08</div>
+          <h3>Time Relationship</h3>
+          <p>How you plan, prioritize, and relate to deadlines. A planner in a reactive role will implode. This measures your temporal orientation.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 09</div>
+          <h3>Stress Response</h3>
+          <p>How you perform under pressure, what breaks you down, what builds you back up. Your stress wiring shapes your career more than your skills.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 10</div>
+          <h3>Value Alignment</h3>
+          <p>What organizational cultures fit your wiring. You can have the perfect role at the wrong company and still be miserable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Your Report Includes -->
+  <section>
+    <div class="section-inner">
+      <div class="report-preview">
+        <div class="section-label" style="color: var(--bronze);">Your 40-Page Report</div>
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.2rem); color: #fff; margin-bottom: 0.75rem;">Not a summary. A complete map of how you work.</h2>
+        <p style="font-size: 0.95rem; color: rgba(255,255,255,0.5); max-width: 550px; line-height: 1.8;">Every section is personalized to your specific answer patterns. No templates. No generic advice. Your report references your actual responses.</p>
+        <div class="report-grid">
+          <div class="report-item">
+            <h4>Domain Analysis</h4>
+            <p>Score visualizations, percentile indicators, and personalized narratives for each of the 10 dimensions.</p>
+          </div>
+          <div class="report-item">
+            <h4>15 Ranked Strengths</h4>
+            <p>Your core strengths ranked by intensity, with behavioral examples and amplification strategies.</p>
+          </div>
+          <div class="report-item">
+            <h4>Blind Spots</h4>
+            <p>8-10 patterns that work against you, each with specific mitigation strategies you can act on.</p>
+          </div>
+          <div class="report-item">
+            <h4>Environment Fit</h4>
+            <p>The work settings, pace, structure, and team configurations where you naturally perform best.</p>
+          </div>
+          <div class="report-item">
+            <h4>Roles That Fit You</h4>
+            <p>Specific role recommendations based on your strengths and environment fit. Not job titles -- work you'd thrive in.</p>
+          </div>
+          <div class="report-item">
+            <h4>Stress Profile</h4>
+            <p>Your pressure response patterns, breakdown signals, recovery strategies, and environments to avoid.</p>
+          </div>
+          <div class="report-item">
+            <h4>Culture Fit Map</h4>
+            <p>Organization types that match your values, red flags to watch for, and interview questions to ask.</p>
+          </div>
+          <div class="report-item">
+            <h4>90-Day Growth Plan</h4>
+            <p>Three priority development areas with concrete weekly practices and progress indicators.</p>
+          </div>
+          <div class="report-item">
+            <h4>Team Guide</h4>
+            <p>A shareable one-pager: "How to Work With [Your Name]" for managers and teammates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section style="background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Three steps to clarity</h2>
+      <p class="section-subtitle">No appointments. No waiting. Complete the assessment on your schedule and receive your report within minutes.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Complete the Assessment</h3>
+          <p>120 forced-choice questions. Each one presents two equally valid statements. No right answers, no wrong answers. Just honest trade-offs that reveal your patterns.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>We Analyze Your DNA</h3>
+          <p>Your responses are scored across 10 domains, 70+ traits, and 6 work archetypes. Every data point is cross-referenced to build your complete professional profile.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Receive Your Report</h3>
+          <p>A 40-page personalized report delivered to your inbox. Every section references your specific answer patterns. Read it in your browser or save as PDF.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Kompiq -->
+  <section>
+    <div class="section-inner">
+      <div class="section-label">Why Kompiq</div>
+      <h2 class="section-title">Built to answer what other assessments miss</h2>
+      <p class="section-subtitle">Most career assessments tell you what you're good at. Kompiq tells you where that matters.</p>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-icon">10</div>
+          <div>
+            <h4>10 Dimensions, Not 4</h4>
+            <p>Most assessments measure 4-6 traits. Kompiq measures 10 interconnected dimensions because your career runs on more than personality type.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">AI</div>
+          <div>
+            <h4>Genuinely Personalized</h4>
+            <p>Every paragraph of your report is generated from your specific answer patterns. Not template-based. Not one-size-fits-all. Yours.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">15</div>
+          <div>
+            <h4>15 Strengths, Not 47</h4>
+            <p>Focused and ranked. You can actually remember and act on 15 strengths. A list of 47 is a wall of noise.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">90</div>
+          <div>
+            <h4>Growth Plan Included</h4>
+            <p>A concrete 90-day development roadmap with weekly practices. Not just "here's who you are" but "here's what to do next."</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">St</div>
+          <div>
+            <h4>Stress Response Measured</h4>
+            <p>How you perform under pressure shapes your career trajectory more than your skills. Most assessments completely miss this.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">Tm</div>
+          <div>
+            <h4>Shareable Team Guide</h4>
+            <p>A one-page "How to Work With You" guide you can share with managers and teammates. Built for the real world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section style="background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-label">Reviews</div>
+      <h2 class="section-title">What professionals are saying</h2>
+      <p class="section-subtitle"></p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">* * * * *</div>
+          <p>"The stress response section alone was worth $99. I've been burning out in roles that match my skills but not my wiring. Kompiq showed me exactly why."</p>
+          <div class="review-name">Sarah K.</div>
+          <div class="review-role">Product Manager, 8 years experience</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">* * * * *</div>
+          <p>"I've taken CliftonStrengths and MBTI. Neither told me what Kompiq did in the first 5 pages. The environment fit section changed how I evaluate job offers."</p>
+          <div class="review-name">James R.</div>
+          <div class="review-role">Software Engineer transitioning to management</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">* * * * *</div>
+          <p>"Shared the team guide with my manager. She said it explained things about our working dynamic that three years of 1:1s hadn't surfaced."</p>
+          <div class="review-name">Priya M.</div>
+          <div class="review-role">UX Researcher, startup environment</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">* * * * *</div>
+          <p>"The blind spots section was uncomfortable in the best way. Not generic warnings but patterns I recognized immediately from my last two roles."</p>
+          <div class="review-name">David L.</div>
+          <div class="review-role">Operations Director, Fortune 500</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">* * * * *</div>
+          <p>"120 questions felt like a lot going in. Coming out, every single one made sense. The forced-choice format made me confront trade-offs I'd been avoiding."</p>
+          <div class="review-name">Ana C.</div>
+          <div class="review-role">Marketing Lead, mid-career pivot</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">* * * * *</div>
+          <p>"The growth plan gave me three specific things to work on with weekly practices. Six weeks in and my team has noticed the difference."</p>
+          <div class="review-name">Marcus T.</div>
+          <div class="review-role">Engineering Manager, Series B startup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="section-inner">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">What does the Kompiq Assessment measure?</div>
+          <div class="faq-a"><div class="faq-a-inner">The Kompiq Assessment maps your professional DNA across 10 dimensions: Cognitive Style, Energy Patterns, Communication Mode, Decision Architecture, Team Dynamics, Motivation Drivers, Learning Orientation, Time Relationship, Stress Response, and Value Alignment. Together, these reveal the work environments, roles, and teams where you naturally perform at your best.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">How long does the assessment take?</div>
+          <div class="faq-a"><div class="faq-a-inner">18-22 minutes. It consists of 120 forced-choice questions where you choose between two equally valid statements. There are no right or wrong answers. Most people find the format engaging because each question presents a genuine trade-off.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">How is this different from MBTI or CliftonStrengths?</div>
+          <div class="faq-a"><div class="faq-a-inner">MBTI categorizes you into one of 16 types. CliftonStrengths ranks 34 themes. Kompiq doesn't categorize -- it maps 10 continuous dimensions that directly connect to work performance. More importantly, Kompiq measures stress response, value alignment, and environment fit, which neither MBTI nor CliftonStrengths address. And every section of your report is AI-personalized to your specific answer patterns, not template-based.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">Is this a clinical or diagnostic assessment?</div>
+          <div class="faq-a"><div class="faq-a-inner">No. Kompiq is a professional self-insight tool grounded in organizational psychology and career development research. It is not a clinical assessment, does not diagnose any condition, and is not a substitute for professional career counseling or mental health support.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">When do I receive my report?</div>
+          <div class="faq-a"><div class="faq-a-inner">Your report is generated within minutes of completing the assessment. You will receive an email with a link to view your full 40-page report online. You can also save it as a PDF directly from your browser.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">Can I share my results?</div>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Your report includes a "How to Work With [Your Name]" team guide specifically designed to be shared with managers, teammates, or direct reports. It covers your communication preferences, decision-making style, stress signals, and ideal collaboration mode.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">What is forced-choice format?</div>
+          <div class="faq-a"><div class="faq-a-inner">Each question presents two statements that are both positive and valid. You choose which one resonates more on a 5-point scale. This eliminates social desirability bias (you can't pick the "right" answer because both options sound good) and surfaces genuine trade-offs in how you work.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.classList.toggle('open'); this.nextElementSibling.style.maxHeight = this.classList.contains('open') ? this.nextElementSibling.scrollHeight + 'px' : '0'">Is there a money-back guarantee?</div>
+          <div class="faq-a"><div class="faq-a-inner">Yes. If your report doesn't deliver meaningful insight, contact us at hello@kompiq.com within 7 days for a full refund.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <div class="final-cta">
+    <h2>Your career is too important for guesswork</h2>
+    <p>The Kompiq Assessment gives you the precision intelligence to make career decisions based on how you're actually wired.</p>
+    <a href="WHOP_CHECKOUT_PLACEHOLDER" class="hero-cta">Take the Kompiq Assessment - $99</a>
+    <p class="hero-sub">120 questions. 18-22 minutes. 40-page personalized report. 100% money-back guarantee.</p>
+  </div>
+
+  <!-- Contact -->
+  <section style="padding: 2rem; text-align: center;">
+    <p style="font-size: 0.92rem; color: var(--text-secondary);">Questions? Reach us at <a href="mailto:hello@kompiq.com" style="color: var(--bronze); text-decoration: none; font-weight: 600;">hello@kompiq.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="how-it-works.html">How It Works</a>
+      <a href="what-you-get.html">What You Get</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <div class="footer-disclaimer">Disclaimer: Kompiq is a professional self-insight tool, not a clinical assessment or replacement for professional career counseling or mental health support.</div>
+    <div class="footer-copy">&copy; 2024 Kompiq. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
