@@ -53,7 +53,7 @@
     .hero-label { font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--bronze); margin-bottom: 1.5rem; display: inline-block; background: var(--bronze-light); padding: 8px 20px; border-radius: 100px; border: 1px solid rgba(166,124,69,0.15); }
     .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5.5vw, 3.8rem); color: var(--primary); line-height: 1.1; letter-spacing: -1px; margin-bottom: 1.5rem; }
     .hero h1 em { font-style: italic; color: var(--bronze); }
-    .hero p { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; max-width: 800px; margin: 0 auto 2.5rem; }
+    .hero p { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; max-width: 100%; margin: 0 auto 2.5rem; }
     .hero-cta { display: inline-block; background: var(--bronze); color: #fff; padding: 18px 44px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.05rem; transition: transform 0.15s, box-shadow 0.15s; }
     .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(166,124,69,0.3); }
     .hero-price { margin-top: 1.25rem; }
@@ -68,7 +68,7 @@
     .section-inner { max-width: 1100px; margin: 0 auto; }
     .section-label { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--bronze); margin-bottom: 0.75rem; }
     .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--primary); line-height: 1.15; margin-bottom: 1rem; }
-    .section-subtitle { font-size: 1.05rem; color: var(--text-secondary); max-width: 900px; line-height: 1.8; margin-bottom: 3rem; }
+    .section-subtitle { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; }
 
     .section-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; margin-bottom: 3rem; border: 1px solid var(--border); }
 
@@ -81,7 +81,7 @@
     .domain-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; }
 
     .report-preview { background: var(--primary); border-radius: 20px; padding: 3.5rem; color: #fff; }
-    .report-preview .section-subtitle { color: rgba(255,255,255,0.5); max-width: 900px; }
+    .report-preview .section-subtitle { color: rgba(255,255,255,0.5); }
     .report-images { display: flex; gap: 1.5rem; margin: 2.5rem 0; }
     .report-img-card { flex: 1; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
     .report-img-card img { width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; }
@@ -94,13 +94,13 @@
     .trusted { padding: 50px 2rem; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--card); overflow: hidden; }
     .trusted-label { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #A8A29E; margin-bottom: 2rem; }
     .trusted-scroll { overflow: hidden; position: relative; }
-    .trusted-scroll::before, .trusted-scroll::after { content: ''; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
-    .trusted-scroll::before { left: 0; background: linear-gradient(to right, var(--card), transparent); }
-    .trusted-scroll::after { right: 0; background: linear-gradient(to left, var(--card), transparent); }
-    .trusted-track { display: flex; gap: 5rem; align-items: center; animation: scroll-logos 25s linear infinite; width: max-content; }
-    .trusted-logo { height: 28px; opacity: 0.45; filter: grayscale(100%); transition: opacity 0.3s; }
-    .trusted-logo:hover { opacity: 0.8; }
-    .trusted-logo-text { font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--primary); white-space: nowrap; opacity: 0.2; letter-spacing: 0.5px; }
+    .trusted-scroll::before, .trusted-scroll::after { content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none; }
+    .trusted-scroll::before { left: 0; background: linear-gradient(to right, var(--card) 0%, transparent 100%); }
+    .trusted-scroll::after { right: 0; background: linear-gradient(to left, var(--card) 0%, transparent 100%); }
+    .trusted-track { display: flex; gap: 5rem; align-items: center; animation: scroll-logos 45s linear infinite; width: max-content; }
+    .trusted-logo-item { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+    .trusted-logo-item svg { height: 24px; width: auto; opacity: 0.5; }
+    .trusted-logo-item span { font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--primary); opacity: 0.25; letter-spacing: 0.5px; }
     @keyframes scroll-logos { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
@@ -125,7 +125,7 @@
     .review-name { font-size: 0.82rem; font-weight: 600; color: var(--primary); }
     .review-role { font-size: 0.72rem; color: #A8A29E; }
 
-    .faq-list { max-width: 800px; }
+    .faq-list { max-width: 100%; }
     .faq-item { border-bottom: 1px solid var(--border); }
     .faq-q { padding: 1.25rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; font-weight: 600; color: var(--primary); }
     .faq-q::after { content: '+'; font-size: 1.2rem; color: var(--bronze); transition: transform 0.2s; }
@@ -135,7 +135,7 @@
 
     .final-cta { text-align: center; padding: 100px 2rem; }
     .final-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--primary); margin-bottom: 1rem; }
-    .final-cta p { font-size: 1.05rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; line-height: 1.8; }
+    .final-cta p { font-size: 1.05rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto 2rem; line-height: 1.8; }
 
     /* Quotes Carousel */
     .quotes-bar { background: var(--primary); padding: 28px 2rem; overflow: hidden; position: relative; }
@@ -143,8 +143,8 @@
     .quotes-bar::before { left: 0; background: linear-gradient(to right, var(--primary), transparent); }
     .quotes-bar::after { right: 0; background: linear-gradient(to left, var(--primary), transparent); }
     .quotes-track { display: flex; gap: 6rem; align-items: center; animation: scroll-quotes 40s linear infinite; width: max-content; }
-    .quote-item { white-space: nowrap; font-family: 'Playfair Display', serif; font-size: 1rem; font-style: italic; color: rgba(255,255,255,0.5); }
-    .quote-item span { color: var(--bronze); font-style: normal; font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; letter-spacing: 1px; text-transform: uppercase; margin-left: 12px; }
+    .quote-item { white-space: nowrap; font-family: 'Playfair Display', serif; font-size: 1rem; font-style: italic; color: rgba(255,255,255,0.9); }
+    .quote-item span { color: #D4A85C; font-style: normal; font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-left: 12px; }
     @keyframes scroll-quotes { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
     footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
@@ -217,22 +217,26 @@
     <div class="trusted-label">Used by professionals from</div>
     <div class="trusted-scroll">
       <div class="trusted-track">
-        <img src="https://logo.clearbit.com/google.com" alt="Google" class="trusted-logo">
-        <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" class="trusted-logo">
-        <img src="https://logo.clearbit.com/nvidia.com" alt="NVIDIA" class="trusted-logo">
-        <img src="https://logo.clearbit.com/deloitte.com" alt="Deloitte" class="trusted-logo">
-        <img src="https://logo.clearbit.com/mckinsey.com" alt="McKinsey" class="trusted-logo">
-        <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" class="trusted-logo">
-        <img src="https://logo.clearbit.com/apple.com" alt="Apple" class="trusted-logo">
-        <img src="https://logo.clearbit.com/meta.com" alt="Meta" class="trusted-logo">
-        <img src="https://logo.clearbit.com/google.com" alt="Google" class="trusted-logo">
-        <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" class="trusted-logo">
-        <img src="https://logo.clearbit.com/nvidia.com" alt="NVIDIA" class="trusted-logo">
-        <img src="https://logo.clearbit.com/deloitte.com" alt="Deloitte" class="trusted-logo">
-        <img src="https://logo.clearbit.com/mckinsey.com" alt="McKinsey" class="trusted-logo">
-        <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" class="trusted-logo">
-        <img src="https://logo.clearbit.com/apple.com" alt="Apple" class="trusted-logo">
-        <img src="https://logo.clearbit.com/meta.com" alt="Meta" class="trusted-logo">
+        <div class="trusted-logo-item"><span>Google</span></div>
+        <div class="trusted-logo-item"><span>Amazon</span></div>
+        <div class="trusted-logo-item"><span>NVIDIA</span></div>
+        <div class="trusted-logo-item"><span>Deloitte</span></div>
+        <div class="trusted-logo-item"><span>McKinsey</span></div>
+        <div class="trusted-logo-item"><span>Microsoft</span></div>
+        <div class="trusted-logo-item"><span>Apple</span></div>
+        <div class="trusted-logo-item"><span>Meta</span></div>
+        <div class="trusted-logo-item"><span>Accenture</span></div>
+        <div class="trusted-logo-item"><span>Salesforce</span></div>
+        <div class="trusted-logo-item"><span>Google</span></div>
+        <div class="trusted-logo-item"><span>Amazon</span></div>
+        <div class="trusted-logo-item"><span>NVIDIA</span></div>
+        <div class="trusted-logo-item"><span>Deloitte</span></div>
+        <div class="trusted-logo-item"><span>McKinsey</span></div>
+        <div class="trusted-logo-item"><span>Microsoft</span></div>
+        <div class="trusted-logo-item"><span>Apple</span></div>
+        <div class="trusted-logo-item"><span>Meta</span></div>
+        <div class="trusted-logo-item"><span>Accenture</span></div>
+        <div class="trusted-logo-item"><span>Salesforce</span></div>
       </div>
     </div>
   </div>
@@ -337,16 +341,16 @@
 
         <div class="report-images">
           <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" alt="Kompiq report displayed on laptop screen">
-            <div class="report-img-caption">Domain Analysis on Desktop</div>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80" alt="Data dashboard with charts and analytics visualizations">
+            <div class="report-img-caption">Score Analysis and Visualizations</div>
           </div>
           <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&q=80" alt="Kompiq report on tablet device">
-            <div class="report-img-caption">Strengths View on Tablet</div>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80" alt="Professional analytics report with graphs on screen">
+            <div class="report-img-caption">Strength Rankings and Insights</div>
           </div>
           <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&q=80" alt="Printed Kompiq report on desk">
-            <div class="report-img-caption">Printed Report</div>
+            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=500&q=80" alt="Professional reviewing detailed career report at desk">
+            <div class="report-img-caption">Actionable Growth Strategies</div>
           </div>
         </div>
 
@@ -500,7 +504,7 @@
           <div class="review-stars">* * * * *</div>
           <blockquote>"Shared the team guide with my manager. She said it explained things about our working dynamic that three years of 1:1s had not surfaced."</blockquote>
           <div class="review-author">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Priya Mehta" class="review-avatar">
+            <img src="https://images.unsplash.com/photo-1611432579699-484f7990b127?w=80&q=80" alt="Priya Mehta" class="review-avatar">
             <div>
               <div class="review-name">Priya Mehta</div>
               <div class="review-role">UX Researcher, startup environment</div>
