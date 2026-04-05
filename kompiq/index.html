@@ -82,10 +82,8 @@
 
     .report-preview { background: var(--primary); border-radius: 20px; padding: 3.5rem; color: #fff; }
     .report-preview .section-subtitle { color: rgba(255,255,255,0.5); }
-    .report-images { display: flex; gap: 1.5rem; margin: 2.5rem 0; }
-    .report-img-card { flex: 1; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-    .report-img-card img { width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; }
-    .report-img-caption { font-size: 0.72rem; color: rgba(255,255,255,0.35); text-align: center; padding: 8px; font-family: 'Space Grotesk', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+    .report-visual { display: flex; justify-content: center; margin: 2.5rem 0 1.5rem; }
+    .report-visual svg { max-width: 500px; width: 100%; height: auto; }
     .report-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
     .report-item { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.5rem; }
     .report-item h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--bronze); margin-bottom: 0.5rem; }
@@ -342,18 +340,60 @@
         <p class="section-subtitle">Every section is personalized to your specific answer patterns. No templates. No generic advice. Your report references your actual responses.</p>
 
         <div class="report-images">
-          <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="Modern open office environment with natural light representing career environment fit">
-            <div class="report-img-caption">Environment Fit</div>
-          </div>
-          <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=500&q=80" alt="Rock climbing wall with colorful holds representing strengths and growth challenges">
-            <div class="report-img-caption">Strengths</div>
-          </div>
-          <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=500&q=80" alt="Abstract connected geometric shapes representing culture fit and organizational alignment">
-            <div class="report-img-caption">Culture Fit</div>
-          </div>
+        <div class="report-visual">
+          <svg viewBox="0 0 500 440" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="500" height="440" fill="none"/>
+            <!-- Grid rings -->
+            <g transform="translate(250, 210)">
+              <polygon points="0,-180 171,-55.6 105.6,145.6 -105.6,145.6 -171,-55.6" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <polygon points="0,-144 136.8,-44.5 84.5,116.5 -84.5,116.5 -136.8,-44.5" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <polygon points="0,-108 102.6,-33.3 63.4,87.4 -63.4,87.4 -102.6,-33.3" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <polygon points="0,-72 68.4,-22.2 42.3,58.3 -42.3,58.3 -68.4,-22.2" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <polygon points="0,-36 34.2,-11.1 21.1,29.1 -21.1,29.1 -34.2,-11.1" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <!-- Axis lines -->
+              <line x1="0" y1="0" x2="0" y2="-180" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <line x1="0" y1="0" x2="171" y2="-55.6" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <line x1="0" y1="0" x2="105.6" y2="145.6" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <line x1="0" y1="0" x2="-105.6" y2="145.6" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <line x1="0" y1="0" x2="-171" y2="-55.6" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <!-- Data polygon - sample scores -->
+              <polygon points="0,-151 143,-39 58,120 -85,102 -120,-44" fill="rgba(166,124,69,0.15)" stroke="#A67C45" stroke-width="2.5"/>
+              <!-- Data points -->
+              <circle cx="0" cy="-151" r="5" fill="#A67C45"/>
+              <circle cx="143" cy="-39" r="5" fill="#A67C45"/>
+              <circle cx="58" cy="120" r="5" fill="#A67C45"/>
+              <circle cx="-85" cy="102" r="5" fill="#A67C45"/>
+              <circle cx="-120" cy="-44" r="5" fill="#A67C45"/>
+              <!-- Second data layer -->
+              <polygon points="0,-108 95,-50 90,87 -63,131 -154,-33" fill="rgba(91,138,154,0.1)" stroke="#5B8A9A" stroke-width="1.5" stroke-dasharray="6 3"/>
+              <!-- Labels -->
+              <text x="0" y="-192" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Cognitive Style</text>
+              <text x="186" y="-52" text-anchor="start" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Energy</text>
+              <text x="186" y="-40" text-anchor="start" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Patterns</text>
+              <text x="116" y="168" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Decision</text>
+              <text x="116" y="180" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Architecture</text>
+              <text x="-116" y="168" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Stress</text>
+              <text x="-116" y="180" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Response</text>
+              <text x="-186" y="-52" text-anchor="end" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Value</text>
+              <text x="-186" y="-40" text-anchor="end" font-family="'Space Grotesk',sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)">Alignment</text>
+            </g>
+            <!-- Legend -->
+            <g transform="translate(140, 420)">
+              <line x1="0" y1="0" x2="20" y2="0" stroke="#A67C45" stroke-width="2.5"/>
+              <text x="28" y="4" font-family="'Space Grotesk',sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Your Profile</text>
+              <line x1="120" y1="0" x2="140" y2="0" stroke="#5B8A9A" stroke-width="1.5" stroke-dasharray="6 3"/>
+              <text x="148" y="4" font-family="'Space Grotesk',sans-serif" font-size="10" fill="rgba(255,255,255,0.45)">Benchmark Average</text>
+            </g>
+            <!-- Score labels on axes -->
+            <g transform="translate(250, 210)">
+              <text x="8" y="-144" font-family="'Space Grotesk',sans-serif" font-size="8" fill="rgba(255,255,255,0.2)">80</text>
+              <text x="8" y="-108" font-family="'Space Grotesk',sans-serif" font-size="8" fill="rgba(255,255,255,0.2)">60</text>
+              <text x="8" y="-72" font-family="'Space Grotesk',sans-serif" font-size="8" fill="rgba(255,255,255,0.2)">40</text>
+              <text x="8" y="-36" font-family="'Space Grotesk',sans-serif" font-size="8" fill="rgba(255,255,255,0.2)">20</text>
+            </g>
+          </svg>
+        </div>
         </div>
 
         <div class="report-grid">
