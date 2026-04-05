@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kompiq.com/sitemap.xml
