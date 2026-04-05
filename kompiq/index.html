@@ -98,9 +98,9 @@
     .trusted-scroll::before { left: 0; background: linear-gradient(to right, var(--card) 0%, transparent 100%); }
     .trusted-scroll::after { right: 0; background: linear-gradient(to left, var(--card) 0%, transparent 100%); }
     .trusted-track { display: flex; gap: 5rem; align-items: center; animation: scroll-logos 45s linear infinite; width: max-content; }
-    .trusted-logo-item { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-    .trusted-logo-item svg { height: 24px; width: auto; opacity: 0.5; }
-    .trusted-logo-item span { font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--primary); opacity: 0.25; letter-spacing: 0.5px; }
+    .trusted-logo-item { display: flex; align-items: center; white-space: nowrap; }
+    .trusted-logo-item svg { height: 30px; width: auto; opacity: 0.4; transition: opacity 0.3s; }
+    .trusted-logo-item:hover svg { opacity: 0.7; }
     @keyframes scroll-logos { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
@@ -142,10 +142,11 @@
     .quotes-bar::before, .quotes-bar::after { content: ''; position: absolute; top: 0; bottom: 0; width: 100px; z-index: 2; }
     .quotes-bar::before { left: 0; background: linear-gradient(to right, var(--primary), transparent); }
     .quotes-bar::after { right: 0; background: linear-gradient(to left, var(--primary), transparent); }
-    .quotes-track { display: flex; gap: 6rem; align-items: center; animation: scroll-quotes 40s linear infinite; width: max-content; }
+    .quotes-track { display: flex; gap: 6rem; align-items: center; animation: scroll-quotes 70s linear infinite; width: max-content; }
     .quote-item { white-space: nowrap; font-family: 'Playfair Display', serif; font-size: 1rem; font-style: italic; color: rgba(255,255,255,0.9); }
     .quote-item span { color: #D4A85C; font-style: normal; font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-left: 12px; }
     @keyframes scroll-quotes { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .limited-badge { display: inline-block; background: rgba(166,124,69,0.12); color: var(--bronze); font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; border: 1px solid rgba(166,124,69,0.2); margin-bottom: 6px; }
 
     footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
     .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
@@ -194,6 +195,7 @@
     <p>The Kompiq Assessment maps your professional DNA across 10 dimensions. Research-backed questions reveal the environments, roles, and teams where you naturally perform at your best.</p>
     <a href="https://whop.com/checkout/plan_TzRekSiQ207Zo" class="hero-cta">Take the Kompiq Assessment</a>
     <div class="hero-price">
+      <div class="limited-badge">Limited Time Offer</div><br>
       <span class="old-price">$149</span>
       <span class="new-price">$99</span>
     </div>
@@ -217,26 +219,26 @@
     <div class="trusted-label">Used by professionals from</div>
     <div class="trusted-scroll">
       <div class="trusted-track">
-        <div class="trusted-logo-item"><span>Google</span></div>
-        <div class="trusted-logo-item"><span>Amazon</span></div>
-        <div class="trusted-logo-item"><span>NVIDIA</span></div>
-        <div class="trusted-logo-item"><span>Deloitte</span></div>
-        <div class="trusted-logo-item"><span>McKinsey</span></div>
-        <div class="trusted-logo-item"><span>Microsoft</span></div>
-        <div class="trusted-logo-item"><span>Apple</span></div>
-        <div class="trusted-logo-item"><span>Meta</span></div>
-        <div class="trusted-logo-item"><span>Accenture</span></div>
-        <div class="trusted-logo-item"><span>Salesforce</span></div>
-        <div class="trusted-logo-item"><span>Google</span></div>
-        <div class="trusted-logo-item"><span>Amazon</span></div>
-        <div class="trusted-logo-item"><span>NVIDIA</span></div>
-        <div class="trusted-logo-item"><span>Deloitte</span></div>
-        <div class="trusted-logo-item"><span>McKinsey</span></div>
-        <div class="trusted-logo-item"><span>Microsoft</span></div>
-        <div class="trusted-logo-item"><span>Apple</span></div>
-        <div class="trusted-logo-item"><span>Meta</span></div>
-        <div class="trusted-logo-item"><span>Accenture</span></div>
-        <div class="trusted-logo-item"><span>Salesforce</span></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Product Sans','Inter',sans-serif" font-size="26" font-weight="500"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan></text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 130 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="24" font-weight="800" fill="#232F3E" letter-spacing="-0.5">amazon</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="800" fill="#76B900" letter-spacing="1">NVIDIA</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#86BC25" letter-spacing="0.5">Deloitte</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#2251FF" letter-spacing="0.5">McKinsey</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="600" fill="#737373" letter-spacing="0.5">Microsoft</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 90 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="24" font-weight="500" fill="#555555" letter-spacing="1">Apple</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="24" font-weight="700" fill="#0668E1" letter-spacing="0">Meta</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#A100FF" letter-spacing="0.5">Accenture</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#00A1E0" letter-spacing="0.5">Salesforce</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Product Sans','Inter',sans-serif" font-size="26" font-weight="500"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan></text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 130 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="24" font-weight="800" fill="#232F3E" letter-spacing="-0.5">amazon</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 110 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="800" fill="#76B900" letter-spacing="1">NVIDIA</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#86BC25" letter-spacing="0.5">Deloitte</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#2251FF" letter-spacing="0.5">McKinsey</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="600" fill="#737373" letter-spacing="0.5">Microsoft</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 90 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="24" font-weight="500" fill="#555555" letter-spacing="1">Apple</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="24" font-weight="700" fill="#0668E1" letter-spacing="0">Meta</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#A100FF" letter-spacing="0.5">Accenture</text></svg></div>
+        <div class="trusted-logo-item"><svg viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg"><text x="0" y="24" font-family="'Inter',sans-serif" font-size="22" font-weight="700" fill="#00A1E0" letter-spacing="0.5">Salesforce</text></svg></div>
       </div>
     </div>
   </div>
@@ -341,16 +343,16 @@
 
         <div class="report-images">
           <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80" alt="Data dashboard with charts and analytics visualizations">
-            <div class="report-img-caption">Score Analysis and Visualizations</div>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80" alt="Colorful data visualization dashboard with radar charts and performance metrics">
+            <div class="report-img-caption">Radar Charts and Domain Scores</div>
           </div>
           <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80" alt="Professional analytics report with graphs on screen">
-            <div class="report-img-caption">Strength Rankings and Insights</div>
+            <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?w=500&q=80" alt="Person analyzing professional development charts and career insights on paper">
+            <div class="report-img-caption">Personalized Career Insights</div>
           </div>
           <div class="report-img-card">
-            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=500&q=80" alt="Professional reviewing detailed career report at desk">
-            <div class="report-img-caption">Actionable Growth Strategies</div>
+            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=500&q=80" alt="Professional printed report with highlighted sections and notes on a clean desk">
+            <div class="report-img-caption">Print-Ready Growth Plan</div>
           </div>
         </div>
 
@@ -435,7 +437,7 @@
           </div>
         </div>
         <div class="diff-card">
-          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=120&q=80" alt="AI personalization" class="diff-img">
+          <img src="https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?w=120&q=80" alt="Unique fingerprint representing personalization" class="diff-img">
           <div>
             <h4>Genuinely Personalized</h4>
             <p>Every paragraph of your report is generated from your specific answer patterns. Not template-based. Not one-size-fits-all. Yours.</p>
@@ -594,6 +596,7 @@
     <p>The Kompiq Assessment gives you the precision intelligence to make career decisions based on how you are actually wired.</p>
     <a href="https://whop.com/checkout/plan_TzRekSiQ207Zo" class="hero-cta">Take the Kompiq Assessment</a>
     <div class="hero-price">
+      <div class="limited-badge">Limited Time Offer</div><br>
       <span class="old-price">$149</span>
       <span class="new-price">$99</span>
     </div>
