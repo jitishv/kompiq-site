@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <title>Kompiq Assessment Methodology | Research Foundations and Scoring</title>
+  <meta name="description" content="The research foundations behind the Kompiq Assessment. Forced-choice format, 10-domain framework, scoring methodology, AI personalization, and validity approach explained.">
+  <link rel="canonical" href="https://kompiq.com/methodology.html">
+  <meta name="keywords" content="Kompiq assessment methodology, career assessment research, forced-choice assessment science, professional assessment validity, Kompiq scoring method">
+  <meta property="og:title" content="Kompiq Assessment Methodology">
+  <meta property="og:description" content="How the Kompiq Assessment was built. Research foundations, forced-choice format, 10-domain framework, scoring, and AI personalization.">
+  <meta property="og:url" content="https://kompiq.com/methodology.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kompiq.com/"},{"@type":"ListItem","position":2,"name":"Methodology","item":"https://kompiq.com/methodology.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Kompiq Assessment Methodology","description":"The research foundations, format rationale, scoring approach, and AI personalization behind the Kompiq Professional DNA Assessment.","author":{"@type":"Organization","name":"Kompiq"},"publisher":{"@type":"Organization","name":"Kompiq","url":"https://kompiq.com"}}
+  </script>
+
+  <style>
+    :root {
+      --primary: #17142C;
+      --bronze: #A67C45;
+      --bg: #FAF8F3;
+      --card: #FFFFFF;
+      --text: #17142C;
+      --text-secondary: #5B5663;
+      --border: #E7E0D6;
+      --bronze-light: rgba(166, 124, 69, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,243,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 68px; }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo-img { height: 120px; width: auto; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.15s; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta { background: var(--bronze); color: #fff !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; transition: transform 0.15s, box-shadow 0.15s; }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(166,124,69,0.3); }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--primary); margin: 5px 0; }
+
+    .breadcrumb { padding: 100px 2rem 0; max-width: 1100px; margin: 0 auto; }
+    .breadcrumb a { color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb span { color: var(--text-secondary); font-size: 0.8rem; margin: 0 0.5rem; }
+    .breadcrumb .current { color: var(--primary); font-size: 0.8rem; font-weight: 600; }
+
+    .page-hero { padding: 140px 2rem 60px; text-align: center; max-width: 1100px; margin: 0 auto; }
+    .page-hero .hero-label { font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--bronze); margin-bottom: 1.5rem; display: inline-block; background: var(--bronze-light); padding: 8px 20px; border-radius: 100px; border: 1px solid rgba(166,124,69,0.15); }
+    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 3.2rem); color: var(--primary); line-height: 1.15; letter-spacing: -1px; margin-bottom: 1.25rem; }
+    .page-hero h1 em { font-style: italic; color: var(--bronze); }
+    .page-hero p { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; max-width: 700px; margin: 0 auto; }
+
+    section { padding: 80px 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--bronze); margin-bottom: 0.75rem; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--primary); line-height: 1.15; margin-bottom: 1rem; }
+    .section-subtitle { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; }
+
+    .content-block { max-width: 800px; margin-bottom: 3rem; }
+    .content-block h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; color: var(--primary); margin-bottom: 0.75rem; }
+    .content-block p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.85; margin-bottom: 1rem; }
+
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; margin-bottom: 3rem; }
+    .method-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }
+    .method-card h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .method-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; }
+
+    .domain-research { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem; }
+    .domain-row { display: flex; gap: 1.5rem; align-items: flex-start; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; }
+    .domain-label { font-family: 'Space Grotesk', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; color: var(--bronze); text-transform: uppercase; margin-bottom: 0.25rem; }
+    .domain-row h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--primary); margin-bottom: 0.4rem; }
+    .domain-row p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.75; }
+    .domain-num-badge { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--bronze); flex-shrink: 0; min-width: 35px; line-height: 1; }
+
+    .dark-section { background: var(--primary); border-radius: 20px; padding: 3.5rem; color: #fff; margin-top: 2rem; }
+    .dark-section h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem; }
+    .dark-section p { font-size: 0.92rem; color: rgba(255,255,255,0.6); line-height: 1.85; margin-bottom: 1rem; }
+    .dark-section .method-grid { margin-top: 1.5rem; }
+    .dark-section .method-card { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.08); }
+    .dark-section .method-card h4 { color: var(--bronze); }
+    .dark-section .method-card p { color: rgba(255,255,255,0.55); }
+
+    .validity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
+    .validity-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; text-align: center; }
+    .validity-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .validity-card p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7; }
+    .validity-stat { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--bronze); margin-bottom: 0.5rem; }
+
+    .final-cta { text-align: center; padding: 100px 2rem; }
+    .final-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--primary); margin-bottom: 1rem; }
+    .final-cta p { font-size: 1.05rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto 2rem; line-height: 1.8; }
+    .hero-cta { display: inline-block; background: var(--bronze); color: #fff; padding: 18px 44px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.05rem; transition: transform 0.15s, box-shadow 0.15s; }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(166,124,69,0.3); }
+    .hero-price { margin-top: 1.25rem; }
+    .hero-price .old-price { font-size: 1.1rem; color: #A8A29E; text-decoration: line-through; margin-right: 8px; }
+    .hero-price .new-price { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+    .limited-badge { display: inline-block; background: rgba(166,124,69,0.12); color: var(--bronze); font-family: 'Space Grotesk', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; border: 1px solid rgba(166,124,69,0.2); margin-bottom: 6px; }
+
+    footer { padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.82rem; }
+    .footer-links a:hover { color: var(--primary); }
+    .footer-disclaimer { font-size: 0.72rem; color: #A8A29E; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .footer-copy { margin-top: 1rem; font-size: 0.75rem; color: #C8C3BB; }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1.25rem; }
+      .logo-img { height: 80px; }
+      .nav-links .nav-link-item { display: none; }
+      .nav-links .nav-cta-item { display: none; }
+      .nav-toggle { display: block; }
+      .nav-links.open { position: absolute; top: 68px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); flex-direction: column; padding: 1rem 1.5rem 1.5rem; gap: 0; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+      .nav-links.open .nav-link-item { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+      .nav-links.open .nav-cta-item { display: block; margin-top: 0.75rem; }
+      .method-grid, .validity-grid { grid-template-columns: 1fr; }
+      .domain-row { flex-direction: column; gap: 0.5rem; }
+      .dark-section { padding: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><img src="img/kompiq_logo.png" alt="Kompiq" class="logo-img"></a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="how-it-works.html">How It Works</a></li>
+        <li class="nav-link-item"><a href="what-you-get.html">What You Get</a></li>
+        <li class="nav-link-item"><a href="methodology.html">Methodology</a></li>
+        <li class="nav-link-item"><a href="reviews.html">Reviews</a></li>
+        <li class="nav-link-item"><a href="faq.html">FAQ</a></li>
+        <li class="nav-link-item"><a href="blog.html">Blog</a></li>
+        <li class="nav-cta-item"><a href="https://whop.com/checkout/plan_TzRekSiQ207Zo" class="nav-cta">Take the Assessment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <span class="current">Methodology</span>
+  </div>
+
+  <div class="page-hero">
+    <div class="hero-label">The Science</div>
+    <h1>Built on research, <em>not guesswork</em></h1>
+    <p>The Kompiq Assessment draws on decades of research in organizational psychology, personality science, and career development. Here is how it all fits together.</p>
+  </div>
+
+  <!-- Forced-Choice Format -->
+  <section>
+    <div class="section-inner">
+      <div class="section-label">Format</div>
+      <h2 class="section-title">Why forced-choice questions</h2>
+      <p class="section-subtitle">The format of an assessment determines the quality of its data. Kompiq uses forced-choice for specific, research-backed reasons.</p>
+
+      <div class="content-block">
+        <h3>The problem with Likert scales</h3>
+        <p>Most assessments use "rate yourself from 1 to 5" questions. Research consistently shows that these scales suffer from social desirability bias. People rate themselves higher on traits they value and lower on traits they do not, regardless of their actual behavior.</p>
+        <p>Forced-choice format eliminates this problem by presenting two equally positive statements. You cannot "game" the assessment because both options are valid. The pattern of your choices across 120 questions reveals your genuine work tendencies.</p>
+      </div>
+
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>Eliminates Social Desirability</h4>
+          <p>Research shows that forced-choice formats reduce social desirability bias by 40 to 60 percent compared to Likert scales. You answer based on genuine preference, not perceived "right" answers.</p>
+        </div>
+        <div class="method-card">
+          <h4>Surfaces Trade-offs</h4>
+          <p>Real work involves constant trade-offs. Speed versus accuracy. Autonomy versus collaboration. Forced-choice mirrors the decisions you make every day, producing more ecologically valid data.</p>
+        </div>
+        <div class="method-card">
+          <h4>Reduces Acquiescence Bias</h4>
+          <p>On Likert scales, many people tend to agree with everything. Forced-choice removes the "agree/disagree" axis entirely, so each response carries genuine signal about your preferences.</p>
+        </div>
+        <div class="method-card">
+          <h4>Higher Predictive Validity</h4>
+          <p>Studies in organizational psychology demonstrate that forced-choice assessments predict job performance and satisfaction more accurately than traditional self-report measures. The trade-off format captures how people actually make decisions.</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>120 questions: why this number</h3>
+        <p>Each of the 10 domains requires a minimum number of data points to produce a reliable score. With fewer than 10 questions per domain, the margin of error becomes too large. With more than 15 per domain, you hit diminishing returns and increased respondent fatigue.</p>
+        <p>120 questions across 10 domains gives an average of 12 questions per domain, with some questions measuring cross-domain interactions. This produces reliable dimensional scores while keeping the assessment under 25 minutes for most people.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 Domain Research Basis -->
+  <section style="background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-label">The 10 Domains</div>
+      <h2 class="section-title">Research basis for each dimension</h2>
+      <p class="section-subtitle">Each of the 10 domains in the Kompiq framework is grounded in established research. Here is the scientific foundation behind each one.</p>
+
+      <div class="domain-research">
+        <div class="domain-row">
+          <div class="domain-num-badge">01</div>
+          <div>
+            <div class="domain-label">Cognitive Style</div>
+            <h4>How you process and structure information</h4>
+            <p>Research in cognitive psychology has identified consistent individual differences in how people process information. Some people default to analytical, sequential processing. Others rely on pattern recognition and intuition. Studies in decision science show these differences are stable across contexts and strongly predict job fit and performance in knowledge work.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">02</div>
+          <div>
+            <div class="domain-label">Energy Patterns</div>
+            <h4>What sustains versus depletes you</h4>
+            <p>Research on burnout and engagement shows that energy management is distinct from skill. You can be highly skilled at something that drains you. Studies on person-job fit demonstrate that alignment between energy patterns and job demands predicts long-term engagement better than competence alone.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">03</div>
+          <div>
+            <div class="domain-label">Communication Mode</div>
+            <h4>How you share and receive information</h4>
+            <p>Communication research identifies stable preferences in how people transmit and process ideas. These include directness versus diplomacy, verbal versus written preference, and think-then-speak versus think-by-speaking patterns. Mismatches in communication mode between team members are one of the leading causes of workplace friction, according to organizational behavior research.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">04</div>
+          <div>
+            <div class="domain-label">Decision Architecture</div>
+            <h4>How you make choices under uncertainty</h4>
+            <p>Research in behavioral economics and decision science has documented consistent individual differences in decision-making. Speed versus deliberation, data reliance versus intuition, reversibility tolerance, and risk appetite are all measurable traits that directly affect how well someone performs in different role types.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">05</div>
+          <div>
+            <div class="domain-label">Team Dynamics</div>
+            <h4>Your natural role in groups</h4>
+            <p>Research on team composition shows that individuals adopt consistent roles in group settings. These roles are distinct from job titles. Studies on high-performing teams demonstrate that performance depends more on role balance than individual talent. Kompiq measures your natural team tendency: driver, facilitator, challenger, supporter, or specialist.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">06</div>
+          <div>
+            <div class="domain-label">Motivation Drivers</div>
+            <h4>What actually makes you start and sustain effort</h4>
+            <p>Motivation research distinguishes between what people say motivates them and what their behavior reveals. Self-determination theory identifies three core drivers: autonomy, competence, and relatedness. Kompiq measures how these drivers interact with your specific work patterns, producing a motivation profile that predicts sustained engagement better than self-reported preferences.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">07</div>
+          <div>
+            <div class="domain-label">Learning Orientation</div>
+            <h4>How you acquire knowledge and adapt</h4>
+            <p>Research on learning styles has evolved significantly. Current evidence supports the idea of learning preferences (how you prefer to learn) rather than fixed styles. Kompiq measures your preferred learning mode: reading, doing, observing, discussing, or teaching. It also measures your generalist versus specialist orientation, which predicts career trajectory in rapidly changing fields.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">08</div>
+          <div>
+            <div class="domain-label">Time Relationship</div>
+            <h4>How you relate to deadlines, planning, and pacing</h4>
+            <p>Research on temporal orientation shows consistent differences in how people plan, prioritize, and pace their work. Some people are natural planners who thrive with structure and advance timelines. Others work best in reactive, deadline-driven environments. Placing a planner in a reactive role, or vice versa, creates chronic friction that skill cannot overcome.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">09</div>
+          <div>
+            <div class="domain-label">Stress Response</div>
+            <h4>How you perform under pressure</h4>
+            <p>Research on occupational stress shows that individuals have distinct, stable patterns in how they respond to pressure. Some people perform better under moderate stress while others degrade quickly. Studies on resilience and recovery demonstrate that stress response patterns predict career longevity and satisfaction more reliably than skill assessments.</p>
+          </div>
+        </div>
+        <div class="domain-row">
+          <div class="domain-num-badge">10</div>
+          <div>
+            <div class="domain-label">Value Alignment</div>
+            <h4>What organizational cultures fit your wiring</h4>
+            <p>Person-organization fit research consistently shows that alignment between personal values and organizational culture predicts job satisfaction, commitment, and retention. You can have the perfect role at the wrong company and still feel misaligned. Kompiq measures your value orientation across multiple culture dimensions to identify where you will and will not thrive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scoring Methodology -->
+  <section>
+    <div class="section-inner">
+      <div class="section-label">Scoring</div>
+      <h2 class="section-title">How scoring works</h2>
+      <p class="section-subtitle">Your responses go through a multi-layer scoring process that captures both your individual patterns and the relationships between them.</p>
+
+      <div class="content-block">
+        <h3>Weighted pattern analysis</h3>
+        <p>Each question contributes to one or more domain scores with specific weights. Questions that measure the intersection of two domains carry split weights. The weighting system was developed through iterative testing to maximize the predictive accuracy of each dimensional score.</p>
+        <p>Your raw scores are then normalized against the broader response population to produce percentile rankings. This tells you not just where you fall on each dimension, but how your profile compares to others.</p>
+      </div>
+
+      <div class="dark-section">
+        <h3>Cross-domain interaction mapping</h3>
+        <p>Your dimensions do not exist in isolation. The scoring system identifies meaningful interactions between your domain scores that create emergent patterns. A high Cognitive Style score combined with low Time Relationship structure creates a different work profile than high Cognitive Style with high Time Relationship structure.</p>
+        <p>These interaction patterns are what make each report unique. Two people with identical single-domain scores can receive very different reports because their cross-domain patterns diverge.</p>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>Primary Scores</h4>
+            <p>Raw dimensional scores on each of the 10 domains, calculated from your direct responses to questions mapped to that domain.</p>
+          </div>
+          <div class="method-card">
+            <h4>Interaction Scores</h4>
+            <p>Derived from the relationships between your primary scores. These capture how your dimensions amplify, moderate, or create tension with each other.</p>
+          </div>
+          <div class="method-card">
+            <h4>Strength Extraction</h4>
+            <p>Your 15 ranked strengths are extracted from the combination of primary and interaction scores, identifying the specific capabilities that emerge from your unique profile.</p>
+          </div>
+          <div class="method-card">
+            <h4>Fit Matching</h4>
+            <p>Your complete profile is compared against environment and role archetypes to identify where your wiring naturally fits and where it will create friction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Personalization -->
+  <section style="background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-label">AI Personalization</div>
+      <h2 class="section-title">How AI generates your report</h2>
+      <p class="section-subtitle">Scoring produces numbers. The AI engine turns those numbers into actionable narrative that speaks directly to your work experience.</p>
+
+      <div class="content-block">
+        <h3>Beyond templates</h3>
+        <p>Traditional assessments use a template library: if you score "high" on a trait, you get the "high" paragraph. This creates reports that feel generic because they are. Kompiq uses AI to generate narrative that accounts for your complete profile, not just individual score ranges.</p>
+        <p>The AI engine receives your full scoring output, including primary scores, interaction patterns, and derived strengths. It then generates each section of your report as a cohesive narrative that references specific patterns in your data. The result reads like a report written about you specifically, because it was.</p>
+      </div>
+
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>Profile-Aware Generation</h4>
+          <p>The AI receives your complete scoring profile before generating any text. Every paragraph accounts for your full pattern, not isolated scores.</p>
+        </div>
+        <div class="method-card">
+          <h4>Cross-Reference Consistency</h4>
+          <p>Sections reference each other. Your stress profile connects to your environment fit. Your strengths connect to your role recommendations. The AI maintains consistency across the entire report.</p>
+        </div>
+        <div class="method-card">
+          <h4>Actionable Language</h4>
+          <p>The AI is trained to produce specific, actionable guidance rather than abstract descriptions. Instead of "you are creative," you see "you generate ideas through verbal brainstorming and perform best when given a sounding board."</p>
+        </div>
+        <div class="method-card">
+          <h4>Behavioral Specificity</h4>
+          <p>Each insight includes behavioral indicators: what the pattern looks like in practice, when it helps, when it may create friction, and what you can do about it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Validity and Reliability -->
+  <section>
+    <div class="section-inner">
+      <div class="section-label">Quality</div>
+      <h2 class="section-title">Validity and reliability</h2>
+      <p class="section-subtitle">An assessment is only useful if it measures what it claims to measure and produces consistent results.</p>
+
+      <div class="content-block">
+        <h3>Our approach to validity</h3>
+        <p>Kompiq uses multiple approaches to ensure assessment quality. Content validity is maintained through systematic question development grounded in established research frameworks. Each question maps to specific dimensional constructs with clear theoretical justification.</p>
+        <p>Construct validity is supported by the consistent factor structure observed across respondent populations. The 10 domains produce statistically distinct scores, confirming that they measure separate constructs rather than variations of the same trait.</p>
+      </div>
+
+      <div class="validity-grid">
+        <div class="validity-card">
+          <div class="validity-stat">10</div>
+          <h4>Distinct Domains</h4>
+          <p>Factor analysis confirms that each domain measures a separate construct with minimal overlap.</p>
+        </div>
+        <div class="validity-card">
+          <div class="validity-stat">120</div>
+          <h4>Calibrated Questions</h4>
+          <p>Each question tested and refined across multiple respondent groups to maximize signal quality.</p>
+        </div>
+        <div class="validity-card">
+          <div class="validity-stat">70+</div>
+          <h4>Trait Indicators</h4>
+          <p>Beyond the 10 domains, the system extracts 70+ granular trait indicators for detailed profiling.</p>
+        </div>
+      </div>
+
+      <div class="content-block" style="margin-top: 3rem;">
+        <h3>Test-retest consistency</h3>
+        <p>When the same person takes the assessment at different times, their dimensional scores remain stable. This is expected because the patterns Kompiq measures reflect enduring work tendencies, not temporary states or moods.</p>
+        <p>Minor score variations across administrations fall within expected ranges and do not materially change the report's conclusions or recommendations.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>What Kompiq is and is not</h3>
+        <p>Kompiq is a professional self-insight tool grounded in organizational psychology research. It measures work-relevant patterns and generates personalized career intelligence.</p>
+        <p>Kompiq is not a clinical assessment. It does not diagnose conditions, predict job performance with certainty, or replace professional career counseling. It is one input, a very good one, in your career decision-making process.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <div class="final-cta">
+    <h2>Research-backed insight, personalized to you</h2>
+    <p>120 forced-choice questions. 10 research-grounded dimensions. AI-generated narrative that speaks directly to your work patterns.</p>
+    <a href="https://whop.com/checkout/plan_TzRekSiQ207Zo" class="hero-cta">Take the Kompiq Assessment</a>
+    <div class="hero-price">
+      <div class="limited-badge">Limited Time Offer</div><br>
+      <span class="old-price">$149</span>
+      <span class="new-price">$99</span>
+    </div>
+    <p style="font-size: 0.82rem; color: #A8A29E; margin-top: 1rem;">100% money-back guarantee</p>
+  </div>
+
+  <section style="padding: 2rem; text-align: center;">
+    <p style="font-size: 0.92rem; color: var(--text-secondary);">Questions about our methodology? Reach us at <a href="mailto:hello@kompiq.com" style="color: var(--bronze); text-decoration: none; font-weight: 600;">hello@kompiq.com</a></p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="how-it-works.html">How It Works</a>
+      <a href="what-you-get.html">What You Get</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <div class="footer-disclaimer">Disclaimer: Kompiq is a professional self-insight tool, not a clinical assessment or replacement for professional career counseling or mental health support.</div>
+    <div class="footer-copy">&copy; 2024 Kompiq. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
